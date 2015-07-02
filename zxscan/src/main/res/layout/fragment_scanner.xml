@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+             xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:elevation="10dp">
+
+    <eu.livotov.zxscan.ScannerView
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:id="@+id/stop_scanner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:textColor="#ffff0000"
+        fontawesometext:fa_icon="fa-pause"
+        android:visibility="invisible"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/action_scanner_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="100dp"
+        android:text="@string/scan"
+        android:translationZ="30dp"
+        bootstrapbutton:bb_icon_right="fa-camera"
+        bootstrapbutton:bb_roundedCorners="true"
+        bootstrapbutton:bb_size="small"
+        bootstrapbutton:bb_type="success"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/scanner_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:elegantTextHeight="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFE9E591"
+        />
+
+</FrameLayout>
