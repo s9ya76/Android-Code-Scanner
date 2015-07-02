@@ -1,20 +1,22 @@
-ZXScanLib for Android v2
+Code-Scanner for Android v1.0
 ========================
 
 ![Screenshot](https://raw.githubusercontent.com/LivotovLabs/zxscanlib/master/zxscanlibSampleScreenshot.png)
 
-�n��
+聲明
 -----
-�H�U��ƨӷ��ӦۡG
+本專案資料來源、Source Code引用來自：
 LivotovLabs/zxscanlib(https://github.com/LivotovLabs/zxscanlib)
 
-�M�װ^�m�G
-(1) ���ɱ��y���į�G���C���y������Decode���W�v�H���ɮį�C�ѩ�쥻������b���y��
-�A���y���bDecode���W�v�W�S���i��ުp�A�ҥH���}�ұ��y���ɡA�j�q���B�z���y��Decode��Request
-�A�Y���e��Layout���䥦��Button�άOInput��
-�A�N�|�o�{���Y�����𪺪��p�C
+專案貢獻：
+(1) 提升掃描器效能：降低掃描器執行Decode的頻率以提升效能。由於原本的元件在掃描時
+，掃描器在Decode的頻率上沒有進行管況，所以當開啟掃描器時，大量的處理掃描器Decode的Request
+，導致若當前的Layout有其它的UI時
+，就會出現延遲的情況。
 
-(2) �W�[���y�����}�����s�A�}�o�̥i�H�ۤv����o�ǫ��s�O�_�e�{�b�e��UI�C
+(2) 開發人員可以自行決定掃描器的掃描靈敏度。若設定高靈敏度，則會降低效能；若設定低靈敏度，則能夠提升效能。
+
+(3) 增加掃描器的開關按鈕，開發者可以自行決定這些按鈕是否呈現在前端UI。
 
 Usage
 -----
@@ -181,3 +183,4 @@ License
 
  [zip]: https://github.com/LivotovLabs/zxscanlib/archive/master.zip
 
+Reference From: LivotovLabs/zxscanlib(https://github.com/LivotovLabs/zxscanlib)
